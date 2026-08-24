@@ -2,7 +2,7 @@ module.exports = {
   apps: [{
     name: 'quiz-api',
     script: 'server.js',
-    cwd: '/var/www/RP',
+    cwd: '/var/www/RP/quiz',
     instances: 1,
     autorestart: true,
     watch: false,
