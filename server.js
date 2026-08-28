@@ -5,7 +5,7 @@ const connectDB = require('./src/config/db');
 const PORT = process.env.PORT;
 
 connectDB().then(() => {
-  app.listen(PORT, () => {
-    console.log(`Quiz API listening on http://localhost:${PORT}`);
+  app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Quiz API listening on http://0.0.0.0:${PORT}`);
   });
 });
